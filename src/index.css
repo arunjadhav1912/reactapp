@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Raleway&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar{
+  background-color: #fff !important;
+}
+
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.navbar a:hover{
+  color:#3498db;
+}
+
+.current{
+  font-weight: bold !important;
+  font-size: 1.2em !important;
+  border-bottom: 1px solid #565387;
+}
+
+.btn-get-started{
+  border-radius: 10px;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  text-decoration: none;
+  padding: 10px;
+  font-size: small;
+}
+
+@media (max-width : 991px) {
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+  .current {
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 44px;
+  font-weight: 700;
+  color: black;
+}
+
+#header .brand-name{
+  color:#3498db
+}
+
+#header h2{
+  color: #484848;
+  font-size: 17px;
+}
+
+.header-img {
+  text-align: right;
+}
+
+#header .animated {
+  animation : up-down 2s ease-in-out infinite alternate-reverse both;
+  
+}
+
+@-webkit-keyframes up-down{
+  0%{
+    transform:translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down{
+  0%{
+    transform:translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
